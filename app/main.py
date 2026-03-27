@@ -30,5 +30,5 @@ class Carnivore(Animal):
                 and not isinstance(other, Carnivore)
                 and not other.hidden):
             other.health -= 50
-        if other.health <= 0 and other in Animal.alive:
-            Animal.alive.remove(other)
+            if other.health <= 0 and other in Animal.alive:
+                Animal.alive.remove(other)
